@@ -19,4 +19,4 @@ ZIP dosyasının kendisini yükleme; ZIP'in içindeki dosyaları yükle.
 - Output Directory: .
 - Install Command: boş
 
-Eski `public` veya `assets` klasörleri depoda kalmışsa sil. Sonra Vercel'de cache kullanmadan Redeploy yap.
+Eski `public` veya `assets` klasörleri depoda kalmışsa sil. Sonra Vercel'de cache kullanmadan Redeploy yap. 
