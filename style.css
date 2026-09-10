@@ -500,3 +500,32 @@ h1,h2,.k,.subtitle,.lead{animation:fadeUp .7s ease both}.btn,.opening-btn{positi
   max-width: 100% !important;
   overflow: hidden;
 }
+/* MOBİL BÖLGESEL HİZMET GÖRSEL VE DÜZEN DÜZELTMESİ */
+@media (max-width: 768px) {
+  /* İki sütunlu alanları mobilde dikey / alt alta yap */
+  .two-col {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Görsel kapsayıcısının mobildeki genişliğini sıfırla */
+  .two-col .img-wrap,
+  .two-col > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Görselin kendisini mobil ekrana tam sığdır */
+  .two-col img,
+  .img-wrap img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
