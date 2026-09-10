@@ -433,3 +433,56 @@ h1,h2,.k,.subtitle,.lead{animation:fadeUp .7s ease both}.btn,.opening-btn{positi
 @media (max-width: 760px) {
   .brand img { width: 160px; max-width: 58vw; height: 70px !important; }
 }
+/* MOBILE STICKY BOTTOM BAR CSS */
+.mobile-sticky-bar {
+  display: none; /* Masaüstü ekranlarda varsayılan olarak gizler */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.mobile-sticky-bar .sticky-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  margin: 0 4px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.mobile-sticky-bar .sticky-btn:active {
+  opacity: 0.8;
+}
+
+.mobile-sticky-bar .btn-call {
+  background-color: #0d6efd; /* Kurumsal Mavi */
+  color: #ffffff !important;
+}
+
+.mobile-sticky-bar .btn-whatsapp {
+  background-color: #25d366; /* WhatsApp Yeşili */
+  color: #ffffff !important;
+}
+
+/* Sadece mobil ve tablet ekranlarda (768px ve altı) görünmesini sağlar */
+@media (max-width: 768px) {
+  .mobile-sticky-bar {
+    display: flex;
+  }
+  
+  /* Ekranın en altındaki footer/linklerin butonların arkasında kalmaması için alt boşluk */
+  body {
+    padding-bottom: 65px;
+  }
+}
