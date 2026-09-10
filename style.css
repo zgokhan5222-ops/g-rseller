@@ -486,3 +486,17 @@ h1,h2,.k,.subtitle,.lead{animation:fadeUp .7s ease both}.btn,.opening-btn{positi
     padding-bottom: 65px;
   }
 }
+/* GÖRSEL VE MOBİL UYUMLULUK DÜZELTMESİ */
+.img-wrap img, 
+.section img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+/* Kapsayıcı kutuların mobilde dışarı taşmasını engeller */
+.img-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
