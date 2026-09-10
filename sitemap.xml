@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Ana Sayfa -->
+  <url>
+    <loc>https://www.rotapsikoteknik.net/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>1.00</priority>
+  </url>
+  
+  <!-- İlçe SEO Sayfaları -->
+  <url>
+    <loc>https://www.rotapsikoteknik.net/avcilar-psikoteknik-belgesi.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.rotapsikoteknik.net/beylikduzu-psikoteknik-belgesi.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.rotapsikoteknik.net/buyukcekmece-psikoteknik-belgesi.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.rotapsikoteknik.net/hadimkoy-psikoteknik-belgesi.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.rotapsikoteknik.net/kirac-psikoteknik-belgesi.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Kurumsal ve Süreç Sayfaları -->
+  <url>
+    <loc>https://www.rotapsikoteknik.net/psikoteknik.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.rotapsikoteknik.net/sofor-karti.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.rotapsikoteknik.net/surec.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.rotapsikoteknik.net/ekibimiz.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.rotapsikoteknik.net/iletisim.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Yasal Sayfalar -->
+  <url>
+    <loc>https://www.rotapsikoteknik.net/kvkk-aydinlatma-metni.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.30</priority>
+  </url>
+</urlset>
