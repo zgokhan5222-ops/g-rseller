@@ -6,6 +6,12 @@
   <title>Sürücü Rehberi ve Bilgi Blogu | Rota Psikoteknik Esenyurt</title>
   <meta name="description" content="Psikoteknik belgesi alma şartları, e-Devlet onaylı rapor süreçleri, SÜDGE ve İBB şoför kartı gereksinimleri hakkında güncel bilgilendirme rehberi.">
   <link rel="canonical" href="https://www.rotapsikoteknik.net/blog.html" />
+  
+  <!-- Favicon Entegrasyonu -->
+  <link rel="icon" href="favicon.ico" sizes="48x48" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="favicon.png">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="inner.css">
   
@@ -104,6 +110,11 @@
   </div>
 </section>
 
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/905469716771?text=Merhaba%2C%20blog%20sayfas%C4%B1ndan%20ula%C5%9F%C4%B1yorum.%20Randevu%20almak%20istiyorum." target="_blank" rel="noopener" class="float-wa">
+  💬 WhatsApp
+</a>
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-grid">
@@ -143,7 +154,7 @@
       <span>T.C. İstanbul Valiliği İl Sağlık Müdürlüğü Yetki Belgesi No: 2026034001810005000546460 (20.08.2026)</span>
     </div>
     <div style="margin-top: 10px; text-align: center;">
-      <a href="/kvkk-aydinlatma-metni.html" target="_blank" style="color: #6c757d; text-decoration: underline; font-size: 13px;">
+      <a href="kvkk-aydinlatma-metni.html" target="_blank" style="color: #6c757d; text-decoration: underline; font-size: 13px;">
         Kişisel Verilerin Korunması (KVKK) Aydınlatma Metni
       </a>
     </div>
@@ -154,6 +165,23 @@
   <a href="tel:05469716771" class="sticky-btn btn-call">📞 Hemen Ara</a>
   <a href="https://wa.me/905469716771?text=Merhaba%2C%20blog%20sayfas%C4%B1ndan%20ula%C5%9F%C4%B1yorum.%20Randevu%20almak%20istiyorum." target="_blank" rel="noopener" class="sticky-btn btn-whatsapp">💬 WhatsApp Randevu</a>
 </div>
+
+<!-- SCROLL ANIMATION JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const revealItems = document.querySelectorAll("section, article");
+  revealItems.forEach(function(el){ el.classList.add("reveal-item"); });
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach(function(el){ observer.observe(el); });
+});
+</script>
 
 </body>
 </html>
