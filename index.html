@@ -11,12 +11,24 @@
   <link rel="icon" type="image/png" sizes="192x192" href="https://rotapsikoteknik.net/favicon.png">
   <link rel="apple-touch-icon" href="https://rotapsikoteknik.net/favicon.png">
 
+  <style>
+    body{margin:0;font-family:system-ui,sans-serif}
+    .opening-video-section{position:relative;min-height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#001c3d}
+    .opening-video-overlay{width:min(1180px,88vw);color:#fff;padding:42px;text-align:center}
+    .opening-title{color:#fff;font-size:clamp(54px,8.4vw,104px);line-height:.95;font-weight:900;margin:0 0 12px}
+    .opening-kicker{color:#b7d2ee;letter-spacing:.22em;font-size:13px;font-weight:900;display:block;margin-bottom:12px}
+  </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="home.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="home.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+  </noscript>
 
   <script type="application/ld+json">
   {
