@@ -315,7 +315,7 @@ body {
   max-width: 280px;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   color: var(--white);
   font-size: 14px;
   font-weight: 800;
@@ -343,7 +343,7 @@ body {
   gap: 16px;
   flex-wrap: wrap;
   font-size: 13px;
-  color: rgba(219,231,246,0.5);
+  color: rgba(219,231,246,0.7);
 }
 
 /* ── DIVIDER ── */
