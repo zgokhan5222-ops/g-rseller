@@ -261,7 +261,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const revealItems = document.querySelectorAll("section, .card, .box, .panel, .who-grid div, .process-grid div, .faq-grid div, .team-card, .media img, .visual-intro img");
+  const revealItems = document.querySelectorAll("section:not(.opening-video-section), .card, .box, .panel, .who-grid div, .process-grid div, .faq-grid div, .team-card, .media img, .visual-intro img");
   revealItems.forEach(function(el){ el.classList.add("reveal-item"); });
   const observer = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
