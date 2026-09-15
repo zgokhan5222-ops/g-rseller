@@ -1,153 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sürücü Rehberi ve Bilgi Blogu | Rota Psikoteknik Esenyurt</title>
-    <meta name="description" content="Esenyurt İBB şoför kartı başvuru süreci, 5 günlük zorunlu Ulaşım Akademisi eğitimi, gerekli belgeler ve e-Devlet onaylı psikoteknik raporu alma rehberi.">
-    
-    <!-- Yapay Zeka (AI Bakışı) ve Google için SSS Şema Kodu -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "İBB Şoför Kartı Kaç Yıl Geçerlidir?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "İBB Şoför Kartı düzenlendiği tarihten itibaren 5 yıl süreyle geçerlidir. Süre bitiminde sürücülerin psikoteknik ve sağlık raporlarını yenileyerek kartlarını güncellemeleri gerekir."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Esenyurt’ta Şoför Kartı İçin Psikoteknik Raporu Nereden Alınır?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Esenyurt ve çevre ilçelerdeki sürücüler, Sağlık Bakanlığı ruhsatlı ve yetkili Rota Psikoteknik Değerlendirme Merkezimizden e-Devlet onaylı psikoteknik belgesini aynı gün içinde alabilirler."
-        }
-      }, {
-        "@type": "Question",
-        "name": "İBB Ulaşım Akademisi 5 Günlük Eğitim Zorunlu mu?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Evet, zorunludur. İstanbul Büyükşehir Belediyesi'nin güncel taşımacılık mevzuatına göre, ticari araç kullanacak tüm şoför adaylarının şoför kartı alabilmesi için 5 günlük İBB Ulaşım Akademisi eğitimini eksiksiz tamamlaması yasal bir şarttır."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Psikoteknik Raporu Olmadan Şoför Kartı Alınır mı?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hayır, alınamaz. Psikoteknik değerlendirme raporu, İBB TUHİM sisteminin zorunlu tuttuğu ilk ve en kritik belgelerin başında gelir."
-        }
-      }]
-    }
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sürücü Rehberi ve Bilgi Blogu | Rota Psikoteknik Esenyurt</title>
+  <meta name="description" content="Esenyurt İBB şoför kartı başvuru süreci, 5 günlük zorunlu Ulaşım Akademisi eğitimi, gerekli belgeler ve e-Devlet onaylı psikoteknik raporu alma rehberi.">
+  <link rel="canonical" href="https://www.rotapsikoteknik.net/blog.html" />
+  
+  <!-- Favicon Entegrasyonu -->
+  <link rel="icon" href="favicon.ico" sizes="48x48" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="favicon.png">
 
-    <!-- Sayfa Tasarımını Düzenleyen CSS Şablonu -->
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
-        header { background: #ffffff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .logo { font-size: 24px; font-weight: bold; color: #0056b3; }
-        nav a { text-decoration: none; color: #555; margin-left: 20px; font-weight: 500; transition: color 0.3s; }
-        nav a:hover { color: #0056b3; }
-        .btn-randevu { background: #25d366; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; }
-        .btn-randevu:hover { background: #20ba59; color: white; }
-        
-        main { max-width: 900px; margin: 40px auto; padding: 30px; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { color: #111; font-size: 32px; margin-bottom: 5px; line-height: 1.3; }
-        .post-meta { color: #777; font-size: 14px; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
-        h2 { color: #0056b3; font-size: 22px; margin-top: 40px; margin-bottom: 20px; border-left: 5px solid #0056b3; padding-left: 15px; }
-        p { line-height: 1.8; font-size: 16px; color: #444; }
-        
-        ul, ol { padding-left: 20px; margin-bottom: 30px; }
-        li { margin-bottom: 12px; font-size: 16px; line-height: 1.6; }
-        li strong { color: #111; }
-        
-        /* Adım Kartları Tasarımı */
-        .step-list { list-style: none; padding: 0; }
-        .step-item { background: #f8f9fa; padding: 20px; margin-bottom: 15px; border-radius: 6px; border-left: 4px solid #ffc107; display: flex; gap: 15px; align-items: flex-start; }
-        .step-number { background: #ffc107; color: #111; font-weight: bold; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        
-        /* SSS Akordeon Kutuları Tasarımı */
-        .faq-section { margin-top: 50px; }
-        .faq-box { background: #f0f7ff; border: 1px solid #d0e3ff; padding: 20px; border-radius: 6px; margin-bottom: 15px; }
-        .faq-box h3 { margin-top: 0; color: #004085; font-size: 18px; display: flex; align-items: center; gap: 10px; }
-        .faq-box p { margin-bottom: 0; font-size: 15px; color: #333; }
-        
-        .other-posts { margin-top: 50px; background: #fff8f0; padding: 25px; border-radius: 6px; border: 1px solid #ffe8cc; }
-        .other-posts h3 { margin-top: 0; color: #d9480f; }
-        .other-posts a { color: #d9480f; text-decoration: none; font-weight: 500; }
-        .other-posts a:hover { text-decoration: underline; }
-        
-        footer { background: #222; color: #bbb; padding: 40px 20px; text-align: center; margin-top: 60px; font-size: 14px; line-height: 1.6; }
-        footer strong { color: #fff; }
-        footer p { color: #bbb; font-size: 14px; }
-    </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="inner.css">
+  
+  <!-- Yapay Zeka (AI Bakışı) ve Google için SSS Şema Kodu -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "İBB Şoför Kartı Kaç Yıl Geçerlidir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "İBB Şoför Kartı düzenlendiği tarihten itibaren 5 yıl süreyle geçerlidir. Süre bitiminde sürücülerin psikoteknik ve sağlık raporlarını yenileyerek kartlarını güncellemeleri gerekir."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Esenyurt’ta Şoför Kartı İçin Psikoteknik Raporu Nereden Alınır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Esenyurt ve çevre ilçelerdeki sürücüler, Sağlık Bakanlığı ruhsatlı ve yetkili Rota Psikoteknik Değerlendirme Merkezimizden e-Devlet onaylı psikoteknik belgesini aynı gün içinde alabilirler."
+      }
+    }, {
+      "@type": "Question",
+      "name": "İBB Ulaşım Akademisi 5 Günlük Eğitim Zorunlu mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, zorunludur. İstanbul Büyükşehir Belediyesi'nin güncel taşımacılık mevzuatına göre, ticari araç kullanacak tüm şoför adaylarının şoför kartı alabilmesi için 5 günlük İBB Ulaşım Akademisi eğitimini eksiksiz tamamlaması yasal bir şarttır."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Psikoteknik Raporu Olmadan Şoför Kartı Alınır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır, alınamaz. Psikoteknik değerlendirme raporu, İBB TUHİM sisteminin zorunlu tuttuğu ilk ve en kritik belgelerin başında gelir."
+      }
+    }]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Rota Psikoteknik Sürücü Bilgilendirme Rehberi",
+    "description": "Psikoteknik değerlendirme raporu ve ticari araç sürücü belgeleri hakkında güncel yasal rehberler.",
+    "url": "https://www.rotapsikoteknik.net/blog.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Rota Psikoteknik Değerlendirme Merkezi",
+      "logo": "https://www.rotapsikoteknik.net/rota-logo.jpg"
+    }
+  }
+  </script>
 </head>
 <body>
 
-    <!-- ÜST MENÜ / HEADER -->
-    <header>
-        <div class="logo">ROTA Psikoteknik</div>
-        <nav>
-            <a href="https://rotapsikoteknik.net">Ana Sayfa</a>
-            <a href="#">Psikoteknik</a>
-            <a href="#">İBB Şoför Kartı</a>
-            <a href="#">Süreç</a>
-            <a href="#">Blog</a>
-            <a href="#">Ekibimiz</a>
-            <a href="#">İletişim</a>
-            <a href="tel:05469716771" class="btn-randevu">📲 Randevu Al</a>
-        </nav>
-    </header>
+<div class="topbar"></div>
 
-    <!-- ANA İÇERİK ALANI -->
-    <main>
-        <article class="blog-post-content">
-            <h1>Esenyurt İBB Şoför Kartı Nasıl Alınır? 2026 Güncel Başvuru Rehberi</h1>
-            <p class="post-meta"><strong>Yayın Tarihi:</strong> 15 Eylül 2026 | <strong>Kategori:</strong> İBB TUDES / Şoför Kartı</p>
-            
-            <p>İstanbul genelinde ticari taksi, servis, minibüs ya da yük taşımacılığı yapan tüm sürücülerin <strong>İstanbul Büyükşehir Belediyesi (İBB) Toplu Ulaşım Hizmetleri Müdürlüğü (TUHİM)</strong> tarafından verilen <strong>Toplu Taşıma Aracı Kullanım Belgesi</strong> yani bilinen adıyla <strong>Şoför Kartı</strong> alması zorunludur.</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="rota-logo.jpg" alt="ROTA Psikoteknik">
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="psikoteknik.html">Psikoteknik</a>
+      <a href="sofor-karti.html">İBB Şoför Kartı</a>
+      <a href="surec.html">Süreç</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="ekibimiz.html">Ekibimiz</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="https://wa.me/905469716771?text=Merhaba%2C%20blog%20sayfas%C4%B1ndan%20ula%C5%9F%C4%B1yorum.%20Randevu%20almak%20istiyorum." target="_blank" rel="noopener" class="nav-cta">📲 Randevu Al</a>
+    </nav>
+  </div>
+</header>
 
-            <p>Esenyurt, Beylikdüzü, Avcılar ve Hadımköy bölgelerindeki sürücüler için İBB Şoför Kartı alma sürecini, 5 günlük yeni zorunlu eğitim şartını, gerekli belgeleri ve en kritik aşama olan psikoteknik raporu detaylarını sizler için derledik.</p>
+<div class="page-hero">
+  <span class="eyebrow">Sürücü Rehberi</span>
+  <h1>Esenyurt İBB Şoför Kartı Nasıl Alınır? 2026 Güncel Başvuru Rehberi</h1>
+  <p>Ticari araç sürücüleri, İBB Şoför Kartı başvuru süreci ve psikoteknik değerlendirme raporlarına dair yasal düzenlemeler hakkında kapsamlı rehber yazıları.</p>
+</div>
 
-            <h2>📋 İBB Şoför Kartı İçin Gerekli Belgeler Nelerdir?</h2>
-            <p>Şoför kartı başvurusunun onaylanması için e-Tuhim sistemine aşağıdaki belgelerin eksiksiz ve güncel olarak yüklenmesi gerekir:</p>
-            <ul>
-                <li><strong>Sürücü Belgesi (Ehliyet):</strong> Ticari araç türüne uygun ceza puanı temiz ehliyet.</li>
-                <li><strong>Psikoteknik Değerlendirme Raporu:</strong> Sağlık Bakanlığı onaylı merkezlerden alınan, <strong>e-Devlet entegreli</strong> ve en az 5 yıl geçerliliği olan rapor.</li>
-                <li><strong>Sağlık Raporu:</strong> Göz ve dahiliye poliklinik onaylı, İBB mevzuatına uygun (EK-7) güncel sağlık raporu.</li>
-                <li><strong>Adli Sicil Kaydı (Sabıka Kaydı):</strong> e-Devlet üzerinden resmi kuruma verilmek üzere alınan, güncel GBT ve adli sicil dökümü.</li>
-                <li><strong>Biyometrik Fotoğraf:</strong> Son 6 ay içinde çekilmiş, sisteme yüklenecek dijital fotoğraf.</li>
-            </ul>
+<section class="section inner-section">
+  
+  <article class="blog-post-content" style="background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 40px;">
+    <p style="color: var(--muted); font-size: 14px; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+      <strong>Yayın Tarihi:</strong> 15 Eylül 2026 | <strong>Kategori:</strong> İBB TUDES / Şoför Kartı
+    </p>
+    
+    <p style="color: #444; font-size: 16px; line-height: 1.8;">İstanbul genelinde ticari taksi, servis, minibüs ya da yük taşımacılığı yapan tüm sürücülerin <strong>İstanbul Büyükşehir Belediyesi (İBB) Toplu Ulaşım Hizmetleri Müdürlüğü (TUHİM)</strong> tarafından verilen <strong>Toplu Taşıma Aracı Kullanım Belgesi</strong> yani bilinen adıyla <strong>Şoför Kartı</strong> alması zorunludur.</p>
 
-            <h2>🔄 5 Adımda İBB Şoför Kartı Başvuru Süreci</h2>
-            <p>İBB Şoför Kartı başvuruları tamamen dijital ortamda ve yeni eğitim müfredatına uygun olarak yürütülmektedir. Süreci şu 5 adımı takip ederek hızlıca tamamlayabilirsiniz:</p>
-            
-            <div class="step-list">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <div><strong>Evrakları Hazırlayın:</strong> İlk olarak en önemli iki sağlık evrakı olan <strong>e-Devlet onaylı psikoteknik raporunuzu</strong> ve EK-7 sağlık raporunuzu tamamlayın.</div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <div><strong>e-Tuhim Sistemine Kaydolun:</strong> İBB TUHİM resmi web sitesi <a href="https://ibb.gov.tr" target="_blank" rel="noopener" style="color: #0056b3; text-decoration: underline;">tuhim.ibb.gov.tr</a> üzerinden şoför profilinizi oluşturun ve evraklarınızı sisteme yükleyin.</div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <div><strong>Zorunlu Ulaşım Akademisi Eğitimine Katılın:</strong> İBB mevzuatı gereğince, evrak onayınızın ardından <strong>5 günlük zorunlu İBB Ulaşım Akademisi</strong> eğitim programına katılmanız ve eğitimi başarıyla tamamlamanız gerekmektedir.</div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">4</div>
-                    <div><strong>Eğitim ve Kart Ücretini Ödeyin:</strong> Eğitimi tamamladıktan sonra cep telefonunuza gelen SMS bilgilendirmesi ile İBB eğitim bedeli ve kart ücreti ödemelerini sistem üzerinden gerçekleştirin.</div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">5</div>
-                    <div><strong>Onay ve Dijital Kart:</strong> Ödeme ve eğitim kontrollerinin ardından İBB tarafından başvurunuz onaylanır ve dijital şoför kartınız aktif hale gelir.</div>
-                </div>
-            </div>
+    <p style="color: #444; font-size: 16px; line-height: 1.8;">Esenyurt, Beylikdüzü, Avcılar ve Hadımköy bölgelerindeki sürücüler için İBB Şoför Kartı alma sürecini, 5 günlük yeni zorunlu eğitim şartını, gerekli belgeleri ve en kritik aşama olan psikoteknik raporu detaylarını sizler için derledik.</p>
 
-            <div class="faq-section">
-                <h2>💬 Sıkça Sorulan Sorular (Şoför Kartı SSS)</h2>
-                
-                <div class="faq-box">
+    <h2 style="font-size: 22px; color: var(--navy); margin-top: 30px; margin-bottom: 15px; border-left: 5px solid var(--navy); padding-left: 12px;">📋 İBB Şoför Kartı İçin Gerekli Belgeler Nelerdir?</h2>
+    <p style="color: #444; font-size: 16px; line-height: 1.8;">Şoför kartı başvurusunun onaylanması için e-Tuhim sistemine aşağıdaki belgelerin eksiksiz ve güncel olarak yüklenmesi gerekir:</p>
+    <ul style="padding-left: 20px; color: #444; line-height: 1.8;">
+        <li style="margin-bottom: 10px;"><strong>Sürücü Belgesi (Ehliyet):</strong> Ticari araç türüne uygun ceza puanı temiz ehliyet.</li>
+        <li style="margin-bottom: 10px;"><strong>Psikoteknik Değerlendirme Raporu:</strong> Sağlık Bakanlığı onaylı merkezlerden alınan, <strong>e-Devlet entegreli</strong> ve en az 5 yıl geçerliliği olan rapor.</li>
+        <li style="margin-bottom: 10px;"><strong>Sağlık Raporu:</strong> Göz ve dahiliye poliklinik onaylı, İBB mevzuatına uygun (EK-7) güncel sağlık raporu.</li>
+        <li style="margin-bottom: 10px;"><strong>Adli Sicil Kaydı (Sabıka Kaydı):</strong> e-Devlet üzerinden resmi kuruma verilmek üzere alınan, güncel GBT ve adli sicil dökümü.</li>
+        <li style="margin-bottom: 10px;"><strong>Biyometrik Fotoğraf:</strong> Son 6 ay içinde çekilmiş, sisteme yüklenecek dijital fotoğraf.</li>
+    </ul>
+
+    <h2 style="font-size: 22px; color: var(--navy); margin-top: 35px; margin-bottom: 15px; border-left: 5px solid var(--navy); padding-left: 12px;">🔄 5 Adımda İBB Şoför Kartı Başvuru Süreci</h2>
+    <p style="color: #444; font-size: 16px; line-height: 1.8;">İBB Şoför Kartı başvuruları tamamen dijital ortamda ve yeni eğitim müfredatına uygun olarak yürütülmektedir. Süreci şu 5 adımı takip ederek hızlıca tamamlayabilirsiniz:</p>
+    
+    <div style="margin-top: 20px;">
+        <div style="background: #f8f9fa; padding: 18px; margin-bottom: 12px; border-radius: 8px; border-left: 4px solid #ffc107; display: flex; gap: 15px; align-items: flex-start;">
+            <div style="background: #ffc107; color: #111; font-weight: bold; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div><strong>Evrakları Hazırlayın:</strong> İlk olarak en önemli iki sağlık evrakı olan <strong>e-Devlet onaylı psikoteknik raporunuzu</strong> ve EK-7 sağlık raporunuzu tamamlayın.</div>
+        </div>
+        <div style="background: #f8f9fa; padding: 18px; margin-bottom: 12px; border-radius: 8px; border-left: 4px solid #ffc107; display: flex; gap: 15px; align-items: flex-start;">
+            <div style="background: #ffc107; color: #111; font-weight: bold; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div><strong>e-Tuhim Sistemine Kaydolun:</strong> İBB TUHİM resmi web sitesi <a href="https://tuhim.ibb.gov.tr" target="_blank" rel="noopener" style="color: var(--navy); font-weight: bold; text-decoration: underline;">tuhim.ibb.gov.tr</a> üzerinden şoför profilinizi oluşturun ve evraklarınızı sisteme yükleyin.</div>
+        </div>
+        <div style="background: #f8f9fa; padding: 18px; margin-bottom: 12px; border-radius: 8px; border-left: 4px solid #ffc107; display: flex; gap: 15px; align-items: flex-start;">
+            <div style="background: #ffc107; color: #111; font-weight: bold; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div><strong>Zorunlu Ulaşım Akademisi Eğitimine Katılın:</strong> İBB mevzuatı gereğince, evrak onayınızın ardından <strong>5 günlük zorunlu İBB Ulaşım Akademisi</strong> eğitim programına katılmanız ve eğitimi başarıyla tamamlamanız gerekmektedir.</div>
+        </div>
+        <div style="background: #f8f9fa; padding: 18px; margin-bottom: 12px; border-radius: 8px; border-left: 4px solid #ffc107; display: flex; gap: 15px; align-items: flex-start;">
+            <div style="background: #ffc107; color: #111; font-weight: bold; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div><strong>Eğitim ve Kart Ücretini Ödeyin:</strong> Eğitimi tamamladıktan sonra cep telefonunuza gelen SMS bilgilendirmesi ile İBB eğitim bedeli ve kart ücreti ödemelerini sistem üzerinden gerçekleştirin.</div>
+        </div>
+        <div style="background: #f8f9fa; padding: 18px; margin-bottom: 12px; border-radius: 8px; border-left: 4px solid #ffc107; display: flex; gap: 15px; align-items: flex-start;">
+            <div style="background: #ffc107; color: #111; font-weight: bold; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
+            <div><strong>Onay ve Dijital Kart:</strong> Ödeme ve eğitim kontrollerinin ardından İBB tarafından başvurunuz onaylanır ve dijital şoför kartınız aktif hale gelir.</div>
+        </div>
+    </div>
+
+    <!-- SSS Bölümü -->
+    <div style="margin-top: 40px;">
+        <h2 style="font-size: 22px; color: var(--navy); margin-bottom: 20px; border-left: 5px solid var(--navy); padding-left: 12px;">💬 Sıkça Sorulan Sorular (Şoför Kartı SSS)</h2>
+        
+        <div style="background: #f0f7ff; border: 1px solid #d0e3ff; padding: 18px; border-radius: 8px; margin-bottom: 12px;">
+            <h3 style="margin-top: 0; color: #004085; font-size: 17px;">İBB Şoför Kartı Kaç Yıl Geçerlidir?</h3>
+            <p style="margin-bottom: 0; font-size: 15px; color: #333; line-height: 1.6;">İBB Şoför Kartı düzenlendiği tarihten itibaren 5 yıl süreyle geçerlidir. Süre bitiminde sürücülerin psikoteknik ve sağlık raporlarını yenileyerek kartlarını güncellemeleri gerekir.</p>
+        </div>
+
+        <div style="background: #f0f7ff; border: 1px solid #d0e3ff; padding: 18px; border-radius: 8px; margin-bottom: 12px;">
+            <h3 style="margin-top: 0; color: #004085; font-size: 17px;">Esenyurt’ta Şoför Kartı İçin Psikoteknik Raporu Nereden Alınır?</h3>
+            <p style="margin-bottom: 0; font-size: 15px; color: #333; line-height: 1.6;">Esenyurt ve çevre ilçelerdeki sürücüler, Sağlık Bakanlığı ruhsatlı ve yetkili Rota Psikoteknik Değerlendirme Merkezimizden e-Devlet onaylı psikoteknik belgesini aynı gün içinde alabilirler.</p>
+        </div>
+
+        <div style="background: #f0f7ff; border: 1px solid #d0e3ff; padding: 18px; border-radius: 8px; margin-bottom: 12px;">
+            <h3 style="margin-top: 0; color: #004085; font-size: 17px;">İBB Ulaşım Akademisi 5 Günlük Eğitim Zorunlu mu?</h3>
+            <p style="margin-bottom: 0; font-size: 15px; color: #333; line-height: 1.6;">Evet, zorunludur. İstanbul Büyükşehir Belediyesi'nin güncel taşımacılık mevzuatına göre, ticari araç kullanacak tüm şoför adaylarının şoför kartı alabilmesi için 5 günlük İBB Ulaşım Akademisi eğitimini eksiksiz tamamlaması yasal bir şarttır.</p>
+        </div>
+
+        <div style="background: #f0f7ff; border: 1px solid #d0e3ff; padding: 18px; border-radius: 8px; margin-bottom: 12px;">
+            <h3 style="margin-top: 0; color: #004085; font-size: 17px;">Psikoteknik Raporu Olmadan Şoför Kartı Alınır mı?</h3>
+            <p style="margin-bottom: 0; font-size: 15px; color: #333; line-height: 1.6;">Hayır, alınamaz. Psikoteknik değerlendirme raporu, İBB TUHİM sisteminin zorunlu tuttuğu ilk ve en kritik belgelerin başında gelir.</p>
+        </div>
+    </div>
+  </article>
+
+  <!-- Önceki Blog Kartları (Izgara Düzeni) -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+    
+    <!-- Makale 1 -->
+    <article style="background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+      <div style="padding: 24px;">
+        <span style="font-size: 13px; color: var(--navy); font-weight: 600; text-transform: uppercase;">Mevzuat & Şartlar</span>
+        <h2 style="font-size: 20px; margin: 10px 0; color: #222;">2026 Psikoteknik Belgesi Yasal Şartları ve Başvuru Süreci</h2>
+        <p style="color: var(--muted); font-size: 14px; margin-bottom: 12px;"><strong>Yayın Tarihi:</strong> 10 Eylül 2026</p>
+        <p style="color: var(--muted); font-size: 15px; line-height: 1.6;">Ticari araç kullanan tüm sürücüler için Karayolu Taşıma Kanunu gereğince zorunlu olan psikoteknik değerlendirme raporu alma adımları, resmi tarife esasları ve yenileme şartları.</p>
+      </div>
+      <div style="padding: 0 24px 24px;">
+        <a href="psikoteknik-belgesi-fiyati-2026.html" style="display: inline-block; color: var(--navy); font-weight: 700; text-decoration: underline;">Rehberi Okuyun →</a>
+      </div>
+    </article>
+
+    <!-- Makale 2 -->
+    <article style="background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+      <div style="padding: 24px;">
+        <span style="font-size: 13px; color: var(--navy); font-weight: 600; text-transform: uppercase;">Ehliyet İade Süreci</span>
+        <h2 style="font-size: 20px; margin: 10px 0; color: #222;">Alkolden Ehliyetini Kaptıranlar Nasıl Psikoteknik Raporu Alır?</h2>
+        <p style="color: var(--muted); font-size: 14px; margin-bottom: 12px;"><strong>Yayın Tarihi:</strong> 10 Eylül 2026</p>
+        <p style="color: var(--muted); font-size: 15px; line-height: 1.6;">Alkollü araç kullanımı sebebiyle ehliyetine geçici el konulan sürücülerin psikoteknik testi, SÜDGE süreci ve ehliyet iade işlemleri hakkında adım adım bilgilendirme.</p>
+      </div>
+      <div style="padding: 0 24px 24px;">
+        <a href="alkolden-ehliyet-kaptiranlar-psikoteknik.html" style="display: inline-block; color: var(--navy); font-weight: 700; text-decoration: underline;">Rehberi Okuyun →</a>
+      </div>
+    </article>
+
+    <!-- Makale 3 -->
+    <article style="background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+      <div style="padding: 24px;">
+        <span style="font-size: 13px; color: var(--navy); font-weight: 600; text-transform: uppercase;">İBB TUDES / Şoför Kartı</span>
+        <h2 style="font-size: 20px; margin: 10px 0; color: #222;">İBB Şoför Kartı İçin Psikoteknik Belgesi Zorunluluğu</h2>
+        <p style="color: var(--muted); font-size: 14px; margin-bottom: 12px;"><strong>Yayın Tarihi:</strong> 10 Eylül 2026</p>
+        <p style="color: var(--muted); font-size: 15px; line-height: 1.6;">İstanbul'da taksi, minibüs, servis ve diğer ticari araçları kullanan sürücülerin İBB Toplu Taşıma Aracı Kullanım Belgesi (Şoför Kartı) alırken ihtiyaç duyduğu psikoteknik şartları.</p>
+      </div>
+      <div style="padding: 0 24px 24px;">
+        <a href="ibb-sofor-karti-psikoteknik-sartlari.html" style="display: inline-block; color: var(--navy); font-weight: 700; text-decoration: underline;">Rehberi Okuyun →</a>
+      </div>
+    </article>
+
+  </div>
+
+  <div style="background-color: #f8f9fa; padding: 28px; border-left: 5px solid var(--navy); border-radius: 8px; margin-top: 50px;">
+    <h3 style="margin-top:0; color: #222;">Sorularınız İçin Bizimle İletişime Geçin</h3>
+    <p style="color: var(--muted); line-height: 1.6;">Esenyurt, Avcılar, Başakşehir, Beylikdüzü, Büyükçekmece, Hadımköy ve Kıraç bölgelerindeki sürücülerimiz için 7/24 randevu hizmeti sunuyoruz.</p>
+    <p style="margin-bottom:6px;"><strong>Telefon:</strong> <a href="tel:+905469716771" style="color:var(--navy); font-weight:bold;">0546 971 67 71</a></p>
+    <p style="margin-bottom:0;"><strong>Adres:</strong> Şehitler Mah. Gazi Cd. Dilek Apt No:153/C, Esenyurt / İstanbul</p>
+  </div>
+</section>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/905469716771?text=Merhaba%2C%20blog%20sayfas%C4%B1ndan%20ula%C5%9F%C4%B1yorum.%20Randevu%20almak%20istiyorum." target="_blank" rel="noopener" class="float-wa">
+  💬 WhatsApp
+</a>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="rota-logo.jpg" alt="ROTA Psikoteknik">
+        <p>Esenyurt, Avcılar, Beylikdüzü, Büyükçekmece, Hadımköy, Kıraç ve Başakşehir bölgelerinde profesyonel psikoteknik değerlendirme hizmeti.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="psikoteknik.html">Psikoteknik</a>
+        <a href="sofor-karti.html">İBB Şoför Kartı</a>
+        <a href="surec.html">Süreç</a>
+        <a href="blog.html">Blog</a>
+        <a href="ekibimiz.html">Ekibimiz</a>
+        <a href="iletisim.html">İletişim</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hizmet Bölgelerimiz</h4>
+        <a href="avcilar-psikoteknik-belgesi.html">Avcılar Psikoteknik</a>
+        <a href="basaksehir-psikoteknik-belgesi.html">Başakşehir Psikoteknik</a>
+        <a href="beylikduzu-psikoteknik-belgesi.html">Beylikdüzü Psikoteknik</a>
+        <a href="buyukcekmece-psikoteknik-belgesi.html">Büyükçekmece Psikoteknik</a>
+        <a href="index.html">Esenyurt Psikoteknik</a>
+        <a href="hadimkoy-psikoteknik-belgesi.html">Hadımköy Psikoteknik</a>
+        <a href="kirac-psikoteknik-belgesi.html">Kıraç Psikoteknik</a>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <p>Şehitler Mah., Gazi Cad. Dilek Apt. No:153/C Esenyurt / İstanbul</p>
+        <a href="tel:05469716771">0546 971 67 71</a>
+        <a href="mailto:bilgi@rotapsikoteknik.net">bilgi@rotapsikoteknik.net</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© ROTA Psikoteknik Değerlendirme Merkezi</span>
+      <span>T.C. İstanbul Valiliği İl Sağlık Müdürlüğü Yetki Belgesi No: 2026034001810005000546460 (20.08.2026)</span>
+    </div>
+    <div style="margin-top: 10px; text-align: center;">
+      <a href="kvkk-aydinlatma-metni.html" target="_blank" style="color: #6c757d; text-decoration: underline; font-size: 13px;">
+        Kişisel Verilerin Korunması (KVKK) Aydınlatma Metni
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-sticky-bar">
+  <a href="tel:05469716771" class="sticky-btn btn-call">📞 Hemen Ara</a>
+  <a href="https://wa.me/905469716771?text=Merhaba%2C%20blog%20sayfas%C4%B1ndan%20ula%C5%9F%C4%B1yorum.%20Randevu%20almak%20istiyorum." target="_blank" rel="noopener" class="sticky-btn btn-whatsapp">💬 WhatsApp Randevu</a>
+</div>
+
+<!-- SCROLL ANIMATION JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const revealItems = document.querySelectorAll("section, article");
+  revealItems.forEach(function(el){ el.classList.add("reveal-item"); });
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach(function(el){ observer.observe(el); });
+});
+</script>
+
+</body>
+</html>
